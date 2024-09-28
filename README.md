@@ -1,6 +1,9 @@
 ## nae.nvim
+
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/6ac4c69d-8336-45b1-98b8-054845299888" alt="output">
+  <img width="1280" alt="greeter variation 1" src="https://github.com/user-attachments/assets/52ccf7c6-79ef-4cf3-af75-c95e2475353b">
+  <img width="1280" alt="greeter variation 2" src="https://github.com/user-attachments/assets/c9d055e5-06d0-4e0a-be1d-b9e378d97dc6">
+  <img width="1280" alt="greeter variation 3" src="https://github.com/user-attachments/assets/bfe26255-ca00-4cb0-9d18-2e299c8fe1a7">
   <p>greeter variations</p>
 </div>
 
