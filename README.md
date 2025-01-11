@@ -5,7 +5,17 @@
   <img style="display: inline; width: 1280px;" alt="greeter variation 2" src="https://github.com/user-attachments/assets/c9d055e5-06d0-4e0a-be1d-b9e378d97dc6">
   <img style="display: inline; width: 1280px;" alt="greeter variation 3" src="https://github.com/user-attachments/assets/bfe26255-ca00-4cb0-9d18-2e299c8fe1a7">
 </div>
-<p align="center">greeter variations</p>
+<div align="center">
+  greeter variations. colorscheme: <a href="https://github.com/ptdewey/darkearth-nvim">darkearth</a>
+</div>
+
+<div align="center">
+  <img style="display: inline; width: 1280px;" alt="with tmux and nvim tree open" src="https://github.com/user-attachments/assets/14b48eb3-375b-4344-8e0b-5138d9128728">
+</div>
+<div align="center">
+  with a tmux terminal and nvimtree open.
+</div>
+
 
 ## installation
 1. clone this repository into your neovim config directory:
