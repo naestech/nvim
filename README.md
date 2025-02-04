@@ -1,6 +1,16 @@
 ## nae.nvim
 
 <div align="center">
+  
+https://github.com/user-attachments/assets/d4510e4a-464d-4875-b52c-584d6693127c.mp4
+
+https://github.com/user-attachments/assets/d5df23f2-57e5-44c1-b18a-92b8dd012dab.mp4
+
+</div>
+
+
+<!-- 
+<div align="center">
   <img style="display: inline; width: 1280px;" alt="greeter variation 1" src="https://github.com/user-attachments/assets/52ccf7c6-79ef-4cf3-af75-c95e2475353b">
   <img style="display: inline; width: 1280px;" alt="greeter variation 2" src="https://github.com/user-attachments/assets/c9d055e5-06d0-4e0a-be1d-b9e378d97dc6">
   <img style="display: inline; width: 1280px;" alt="greeter variation 3" src="https://github.com/user-attachments/assets/bfe26255-ca00-4cb0-9d18-2e299c8fe1a7">
@@ -8,14 +18,13 @@
 <div align="center">
   greeter variations. colorscheme: <a href="https://github.com/ptdewey/darkearth-nvim">darkearth</a>
 </div>
-
 <div align="center">
   <img style="display: inline; width: 1280px;" alt="with tmux and nvim tree open" src="https://github.com/user-attachments/assets/14b48eb3-375b-4344-8e0b-5138d9128728">
 </div>
 <div align="center">
   with a tmux terminal and nvimtree open.
 </div>
-
+-->
 
 ## installation
 1. clone this repository into your neovim config directory:
