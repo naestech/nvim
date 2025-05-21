@@ -1,28 +1,16 @@
 return {
-	url = "https://codeberg.org/jthvai/lavender.nvim",
-	branch = "stable", -- versioned tags + docs updates from main
-	lazy = false,
+	"e-ink-colorscheme/e-ink.nvim",
 	priority = 1000,
 	config = function()
-		-- Add configuration before setting colorscheme
-		vim.g.lavender = {
-			transparent = {
-				background = false,
-				float = false,
-				popup = false,
-				sidebar = false,
-			},
-			contrast = true,
-			italic = {
-				comments = true,
-				functions = true,
-				keywords = false,
-				variables = false,
-			},
-			signs = false,
-		}
+		require("e-ink").setup()
+		vim.cmd.colorscheme("e-ink")
 
-		-- Set the colorscheme
-		vim.cmd("colorscheme lavender")
+		-- choose light mode or dark mode
+		vim.opt.background = "dark"
+		-- vim.opt.background = "light"
+		--
+		-- or do
+		-- :set background=dark
+		-- :set background=light
 	end,
 }
