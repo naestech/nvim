@@ -1,1 +1,1 @@
-/Users/nadine/.config/nvim/ascii/baronnamiAscii.txt
+/Users/nae/.config/nvim/ascii/baronnamiAscii.txt
