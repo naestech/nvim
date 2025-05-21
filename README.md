@@ -39,7 +39,6 @@ https://github.com/user-attachments/assets/d5df23f2-57e5-44c1-b18a-92b8dd012dab.
 
 | plugin                                       | description                                    |
 |----------------------------------------------|------------------------------------------------|
-| **[alpha.nvim](https://github.com/goolord/alpha-nvim)** | dashboard for neovim. |
 | **[auto-session.nvim](https://github.com/rmagatti/auto-session)** | automatic session management. |
 | **[autopairs.nvim](https://github.com/windwp/nvim-autopairs)** | automatic pairing of brackets and quotes. |
 | **[avante.nvim](https://github.com/yetone/avante.nvim)** | ai code suggestions. |
@@ -65,6 +64,7 @@ https://github.com/user-attachments/assets/d5df23f2-57e5-44c1-b18a-92b8dd012dab.
 | **[trouble.nvim](https://github.com/folke/trouble.nvim)** | diagnostics list. |
 | **[vim-maximizer](https://github.com/szw/vim-maximizer)** | maximizes and restores current window. |
 | **[which-key.nvim](https://github.com/folke/which-key.nvim)** | display available keybindings. |
+| **[yanky.nvim](https://github.com/gbprod/yanky.nvim)** | improved yank and put functionalities. |
 
 ## credits
 this configuration would not be possible without [josean's tutorial](https://www.josean.com/posts/how-to-setup-neovim-2024).
