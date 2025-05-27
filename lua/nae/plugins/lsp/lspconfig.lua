@@ -1,12 +1,15 @@
 return {
 	"neovim/nvim-lspconfig",
+
 	event = { "BufReadPre", "BufNewFile" },
+
 	dependencies = {
 		"hrsh7th/cmp-nvim-lsp",
 		{ "antosha417/nvim-lsp-file-operations", config = true },
 		{ "folke/neodev.nvim", opts = {} },
 		"williamboman/mason-lspconfig.nvim",
 	},
+
 	config = function()
 		local lspconfig = require("lspconfig")
 		local mason_lspconfig = require("mason-lspconfig")
@@ -47,20 +50,162 @@ return {
 		})
 
 		local capabilities = cmp_nvim_lsp.default_capabilities()
-		local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }
+		local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }
 		for type, icon in pairs(signs) do
 			local hl = "DiagnosticSign" .. type
 			vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 		end
 
 		mason_lspconfig.setup({
-			ensure_installed = {}, -- ensure language servers are installed
+			ensure_installed = {
+				-- frequent languages
+				"pyright", -- python
+				"ts_ls", -- typescript / javascript
+				"html", -- html
+				"cssls", -- css
+
+				-- secondary languages
+				"omnisharp", -- .net / c#
+				"clangd", -- c / c++
+				"phpactor", -- php
+				"bashls", -- bash
+				"lua_ls", -- lua
+				"tailwindcss", -- tailwind css
+
+				-- languages to learn
+				"gopls", -- go
+				"rust_analyzer", -- rust
+			},
 			handlers = {
+				-- default handler for servers without specific config
 				function(server_name)
 					lspconfig[server_name].setup({
 						capabilities = capabilities,
 					})
 				end,
+
+				-- python
+				["pyright"] = function()
+					lspconfig.pyright.setup({
+						capabilities = capabilities,
+						settings = {
+							python = {
+								analysis = {
+									typeCheckingMode = "basic",
+									autoSearchPaths = true,
+									useLibraryCodeForTypes = true,
+								},
+							},
+						},
+					})
+				end,
+
+				-- typescript / javascript
+				["ts_ls"] = function()
+					lspconfig.ts_ls.setup({
+						capabilities = capabilities,
+					})
+				end,
+
+				-- html
+				["html"] = function()
+					lspconfig.html.setup({
+						capabilities = capabilities,
+						filetypes = { "html", "templ" },
+					})
+				end,
+
+				-- tailwind css
+				["tailwindcss"] = function()
+					lspconfig.tailwindcss.setup({
+						capabilities = capabilities,
+						settings = {
+							tailwindCSS = {
+								experimental = {
+									classRegex = {
+										"tw`([^`]*)",
+										'tw="([^"]*)',
+										'tw={"([^"]*)',
+										"tw\\.\\w+`([^`]*)",
+										"tw\\(.*?\\)`([^`]*)",
+									},
+								},
+							},
+						},
+					})
+				end,
+
+				-- .net / c#
+				["omnisharp"] = function()
+					lspconfig.omnisharp.setup({
+						capabilities = capabilities,
+						cmd = { "omnisharp" },
+						settings = {
+							FormattingOptions = {
+								EnableEditorConfigSupport = true,
+								OrganizeImports = true,
+							},
+							MsBuild = {
+								LoadProjectsOnDemand = false,
+							},
+							RoslynExtensionsOptions = {
+								EnableAnalyzersSupport = true,
+								EnableImportCompletion = true,
+							},
+						},
+					})
+				end,
+
+				-- c / c++
+				["clangd"] = function()
+					lspconfig.clangd.setup({
+						capabilities = capabilities,
+						cmd = {
+							"clangd",
+							"--background-index",
+							"--clang-tidy",
+							"--header-insertion=iwyu",
+							"--completion-style=detailed",
+							"--function-arg-placeholders",
+							"--fallback-style=llvm",
+						},
+					})
+				end,
+
+				-- go
+				["gopls"] = function()
+					lspconfig.gopls.setup({
+						capabilities = capabilities,
+						settings = {
+							gopls = {
+								analyses = {
+									unusedparams = true,
+								},
+								staticcheck = true,
+								gofumpt = true,
+							},
+						},
+					})
+				end,
+
+				-- rust
+				["rust_analyzer"] = function()
+					lspconfig.rust_analyzer.setup({
+						capabilities = capabilities,
+						settings = {
+							["rust-analyzer"] = {
+								cargo = {
+									allFeatures = true,
+								},
+								checkOnSave = {
+									command = "clippy",
+								},
+							},
+						},
+					})
+				end,
+
+				-- lua
 				["lua_ls"] = function()
 					lspconfig.lua_ls.setup({
 						capabilities = capabilities,
