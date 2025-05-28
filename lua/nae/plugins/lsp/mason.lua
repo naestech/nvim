@@ -60,7 +60,6 @@ return {
 				-- additional tools
 				"flake8", -- python linter (alternative to pylint)
 				"gofumpt", -- go formatter
-				"rustfmt", -- rust formatter
 				"clang-format", -- c/c++ formatter
 				"php-cs-fixer", -- php formatter
 				"phpcs", -- php linter
