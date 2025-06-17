@@ -1,12 +1,11 @@
-## nae.nvim
+#
 
-<div align="center">
-  
-https://github.com/user-attachments/assets/d4510e4a-464d-4875-b52c-584d6693127c.mp4
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7db87740-485c-4761-8a10-f5cd57405416" alt="nami_nvim" width="45%" />
+  <img src="https://github.com/user-attachments/assets/ef4d0fbb-6e03-4a5c-8a62-bd1634d8d36c" alt="robin_nvim" width="45%" />
+</p>
 
-https://github.com/user-attachments/assets/d5df23f2-57e5-44c1-b18a-92b8dd012dab.mp4
-
-</div>
+<p align="center"><em>nae.nvim, now einked!</em></p>
 
 
 <!-- 
@@ -39,15 +38,16 @@ https://github.com/user-attachments/assets/d5df23f2-57e5-44c1-b18a-92b8dd012dab.
 
 | plugin                                       | description                                    |
 |----------------------------------------------|------------------------------------------------|
+| **[alpha.nvim](https://github.com/goolord/alpha-nvim)** | greeter. |
 | **[auto-session.nvim](https://github.com/rmagatti/auto-session)** | automatic session management. |
 | **[autopairs.nvim](https://github.com/windwp/nvim-autopairs)** | automatic pairing of brackets and quotes. |
-| **[avante.nvim](https://github.com/yetone/avante.nvim)** | ai code suggestions. |
 | **[bufferline.nvim](https://github.com/akinsho/bufferline.nvim)** | buffer line. |
-| **[colorscheme.nvim](https://github.com/your-repo/colorscheme)** | customize color schemes. |
-| **[Comment.nvim](https://github.com/numToStr/Comment.nvim)** | easy commenting. |
+| **[colorscheme.nvim](https://github.com/e-ink-colorscheme/e-ink.nvim)** | eink colorscheme. |
+| **[comment.nvim](https://github.com/numToStr/Comment.nvim)** | easy commenting. |
 | **[dressing.nvim](https://github.com/stevearc/dressing.nvim)** | enhance vim's default UI. |
 | **[formatting.nvim](https://github.com/simrat39/rust-tools.nvim)** | formatting tools. |
 | **[gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)** | git integration. |
+| **[golf.nvim](https://github.com/vuciv/golf)** | vim motions keystroke game. |
 | **[indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)** | indentation guides. |
 | **[init.nvim](https://github.com/your-repo/init.nvim)** | initial configuration for nvim. |
 | **[lazygit.nvim](https://github.com/kasparis/lazygit.nvim)** | integrate lazygit with nvim. |
